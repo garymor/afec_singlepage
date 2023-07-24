@@ -20,3 +20,15 @@ img_prd1.classList="img-fluid rounded-start"
 const prd1_div = document.querySelector('#product_1')
 prd1_div.appendChild(img_prd1)
 
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+
+
+
