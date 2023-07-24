@@ -14,7 +14,7 @@ const logo_div = document.querySelector('#logo_div')
 logo_div.appendChild(img)
 
 const img_prd1 = document.createElement('img')
-img_prd1.width = 200
+img_prd1.width = 300
 img_prd1.src = product_1
 img_prd1.classList="img-fluid rounded-start"
 const prd1_div = document.querySelector('#product_1')
