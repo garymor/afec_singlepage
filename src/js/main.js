@@ -16,21 +16,18 @@ function addImage(slct,img) {
     prd_div.appendChild(img_prd)
 }
 
-addImage('#product_2',product_2)
+addImage('#product_2', product_2)
+addImage('#product_1',product_1)
 
-const img = document.createElement('img')
-img.width = 90
-img.src = logo_img
-img.classList="img-fluid"
-const logo_div = document.querySelector('#logo_div')
-logo_div.appendChild(img)
 
-const img_prd1 = document.createElement('img')
-img_prd1.width = 300
-img_prd1.src = product_1
-img_prd1.classList="img-fluid rounded-start"
-const prd1_div = document.querySelector('#product_1')
-prd1_div.appendChild(img_prd1)
+// const img = document.createElement('img')
+// img.width = 90
+// img.src = logo_img
+// img.classList="img-fluid"
+// const logo_div = document.querySelector('#logo_div')
+// logo_div.appendChild(img)
+
+
 
 
 
