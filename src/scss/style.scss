@@ -1,3 +1,47 @@
 button:not(:disabled), [type=button]:not(:disabled){
     color: rgb(17, 25, 73)
 }
+
+// .bigger{
+//     width:60vw;
+//     height: 30vh;
+//     transition: all 2s;
+// }
+
+.original{
+    max-width: 721px;
+    transition: all 0.75s;
+}
+
+.original:hover{
+    width:57vw;
+    max-width: 57vw;
+    height: 50vh;
+}
+
+.original:hover .img-fluid{
+    max-width: 10vh;
+    max-height: 7vh;
+    margin: 1vh;
+    transition: all 0.75s;
+}
+
+.original:hover .prdct-img {
+    width:10%
+}
+
+.original:hover .card-text{
+    max-height: 40vh;
+    width:45vw;
+    max-width: 45vw;
+
+}
+
+ .card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 41vh; */
+    max-height: 13vh;
+}
+
+
