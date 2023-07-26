@@ -3,35 +3,39 @@ import '../scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 import '../scss/style.scss'
-import logo_img from '../../afec_logo.jpeg'
-import product_1 from '../../product_1.jpeg'
 import product_2 from '../../product_2.jpeg'
+import home_1 from '../../img/home_1.jpg'
+import howitwrks_1 from '../../img/howitwrks_1.jpg'
+import howitwrks_2 from '../../img/howitwrks_2.jpg'
+import howitwrks_3 from '../../img/howitwrks_3.jpg'
+//import card_prd2_2 from '../../img/card_prd2_2.png'
 
-function addImage(slct,img) {
+import _bg from '../../img/_bg.jpeg'
+import _bg2 from '../../img/_bg2.jpeg'
+
+
+
+function addImage(slct,img,width=200,brdr='1vh') {
     let img_prd = document.createElement('img')
-    img_prd.width = 300
+    img_prd.width = width
+    img_prd.style.borderRadius=brdr
     img_prd.src = img
-    img_prd.classList="img-fluid rounded-start"
+    img_prd.classList="img-fluid rounded-9"
     let prd_div = document.querySelector(slct)
-    prd_div.appendChild(img_prd)
+    prd_div.appendChild(img_prd,width)
 }
 
 addImage('#product_2', product_2)
-addImage('#product_1',product_1)
+addImage('#product_1', home_1)
+//addImage('#card_prd2_2', card_prd2_2,'1000')
+
+addImage('#h_it_w_crsl', howitwrks_1,80,'5vh')
+addImage('#h_it_w_crsl', howitwrks_2,80,'5vh')
+addImage('#h_it_w_crsl', howitwrks_3, 80, '8vh')
 
 
-// const img = document.createElement('img')
-// img.width = 90
-// img.src = logo_img
-// img.classList="img-fluid"
-// const logo_div = document.querySelector('#logo_div')
-// logo_div.appendChild(img)
-
-
-
-
-
-
+const body = document.getElementById('bg')
+body.style.backgroundImage = `url(${_bg}),url(${_bg2})`
 const toastTrigger = document.getElementById('liveToastBtn')
 const toastLiveExample = document.getElementById('liveToast')
 

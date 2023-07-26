@@ -2,46 +2,87 @@ button:not(:disabled), [type=button]:not(:disabled){
     color: rgb(17, 25, 73)
 }
 
-// .bigger{
-//     width:60vw;
-//     height: 30vh;
-//     transition: all 2s;
+.bg::before{
+    opacity:0.5
+}
+.bg::after{
+    opacity:0.5
+}
+
+// .original{
+//     max-width: 721px;
+//     transition: all 0.75s;
 // }
 
+// .original:hover{
+//     width:57vw;
+//     max-width: 57vw;
+//     height: 50vh;
+// }
+
+// .original:hover .img-fluid{
+//     max-width: 10vh;
+//     max-height: 7vh;
+//     margin: 1vh;
+//     transition: all 0.75s;
+// }
+
+// .original:hover .prdct-img {
+//     width:10%
+// }
+
+// .original:hover .card-text{
+//     max-height: 40vh;
+//     width:45vw;
+//     max-width: 45vw;
+
+// }
+
+//  .card-text{
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     /* max-width: 41vh; */
+//     max-height: 13vh;
+// }
+
+
 .original{
-    max-width: 721px;
-    transition: all 0.75s;
+    width:77vw;
+    max-width: 77vw;
+    height: 57vh;
 }
 
-.original:hover{
-    width:57vw;
-    max-width: 57vw;
-    height: 50vh;
-}
-
-.original:hover .img-fluid{
+.img-fluid{
     max-width: 10vh;
     max-height: 7vh;
     margin: 1vh;
     transition: all 0.75s;
 }
 
-.original:hover .prdct-img {
-    width:10%
+ .prdct-img {
+    width:15%; 
 }
 
-.original:hover .card-text{
+
+ .card-text{
     max-height: 40vh;
     width:45vw;
     max-width: 45vw;
 
 }
 
- .card-text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* max-width: 41vh; */
-    max-height: 13vh;
+ 
+
+.zindx{
+    width:40vh;
+    top:35vh;
+    height:40vh;
+    left:75vw;
+    transition: all 0.75s;
 }
 
-
+.zindx:hover{
+    width:67vw;
+    left:20vw;
+    height:60vh;
+}
