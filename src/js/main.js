@@ -8,7 +8,10 @@ import home_1 from '../../img/home_1.jpg'
 import howitwrks_1 from '../../img/howitwrks_1.jpg'
 import howitwrks_2 from '../../img/howitwrks_2.jpg'
 import howitwrks_3 from '../../img/howitwrks_3.jpg'
-//import card_prd2_2 from '../../img/card_prd2_2.png'
+
+import slide_1 from '../../img/slide_1.png'
+import slide_2 from '../../img/slide_2.png'
+import slide_3 from '../../img/slide_3.png'
 
 import _bg from '../../img/_bg.jpeg'
 import _bg2 from '../../img/_bg2.jpeg'
@@ -33,6 +36,18 @@ addImage('#h_it_w_crsl', howitwrks_1,80,'5vh')
 addImage('#h_it_w_crsl', howitwrks_2,80,'5vh')
 addImage('#h_it_w_crsl', howitwrks_3, 80, '8vh')
 
+function addSlideImage(slct,img,width=200) {
+    let img_prd = document.createElement('img')
+    img_prd.width = width
+    img_prd.src = img
+    img_prd.classList="d-block w-100"
+    let prd_div = document.querySelector(slct)
+    prd_div.appendChild(img_prd,width)
+}
+
+addSlideImage('#slide_1', slide_1)
+addSlideImage('#slide_2', slide_2)
+addSlideImage('#slide_3',slide_3)
 
 const body = document.getElementById('bg')
 body.style.backgroundImage = `url(${_bg}),url(${_bg2})`
