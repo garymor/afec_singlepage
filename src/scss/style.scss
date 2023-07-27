@@ -45,16 +45,26 @@ button:not(:disabled), [type=button]:not(:disabled){
 //     max-height: 13vh;
 // }
 
+body {
+    overflow-x: hidden; 
+}
 
 .original{
-    width:77vw;
-    max-width: 77vw;
+    width:85vw;
+    max-width: 85vw;
     height: 57vh;
 }
 
 .img-fluid{
-    max-width: 15vh;
-    max-height: 10vh;
+    max-width: 20vh;
+    max-height: 15vh;
+    margin: 1vh;
+    transition: all 0.75s;
+}
+
+.img-fluid:hover{
+    max-width: 30vh;
+    max-height: 25vh;
     margin: 1vh;
     transition: all 0.75s;
 }
@@ -65,9 +75,9 @@ button:not(:disabled), [type=button]:not(:disabled){
 
 
  .card-text{
-    max-height: 40vh;
-    width:45vw;
-    max-width: 45vw;
+   
+    width:70vw;
+    max-width: 70vw;
 
 }
 
@@ -86,3 +96,56 @@ button:not(:disabled), [type=button]:not(:disabled){
     left:20vw;
     height:60vh;
 }
+
+@media only screen and (max-width: 600px) {
+   
+    .original{
+        width:910w;
+        max-width: 97vw;
+        height:160vh ;
+        margin-top: 45vh;
+    }
+
+    .bg{
+        height:170vh ;
+    }
+    #myTabContent{
+        height: 173vh;
+    }
+    #myTab{
+        gap: 2px !important;;
+    }
+    .nav-item{
+        width:fit-content;
+        font-size: 0.9em!important;
+        height: 8vh;
+        padding:0;
+        margin:0;
+    }
+
+    .nav-item button:not(:disabled){
+        margin: 3px !important;
+        
+        font-weight: 800;
+    }
+    #break-tab{
+        width: 0 !important;
+    }
+
+    #liveToast{
+        width: 70vw !important;
+    }
+    .toast-container{
+        right: 10% !important;
+    }
+    #h_it_w_crsl{
+      
+      left: -8vh;
+    position: relative;
+    }
+
+    .img-fluid {
+        max-width: 10vh;
+        margin-left: 5vh;
+    }
+  }

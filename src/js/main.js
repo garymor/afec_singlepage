@@ -10,31 +10,31 @@ import howitwrks_2 from '../../img/howitwrks_2.jpg'
 import howitwrks_3 from '../../img/howitwrks_3.jpg'
 
 import slide_1 from '../../img/slide_1.png'
-import slide_2 from '../../img/slide_2.png'
-import slide_3 from '../../img/slide_3.png'
+import slide_2 from '../../img/slide_2.jpeg'
+import slide_3 from '../../img/slide_3.jpeg'
 
 import _bg from '../../img/_bg.jpeg'
 import _bg2 from '../../img/_bg2.jpeg'
 
 
 
-function addImage(slct,img,width=200,brdr='1vh') {
+function addImage(slct,img,width=200,brdr='1vh',fluid="img-fluid rounded-9") {
     let img_prd = document.createElement('img')
     img_prd.width = width
     img_prd.style.borderRadius=brdr
     img_prd.src = img
-    img_prd.classList="img-fluid rounded-9"
+    img_prd.classList = fluid;
     let prd_div = document.querySelector(slct)
     prd_div.appendChild(img_prd,width)
 }
 
-addImage('#product_2', product_2)
-addImage('#product_1', home_1)
+addImage('#product_2', howitwrks_2,150,'1vh','rounded-9 start-50')
+addImage('#product_1', home_1,150,'1vh','rounded-9 start-50')
 //addImage('#card_prd2_2', card_prd2_2,'1000')
 
-addImage('#h_it_w_crsl', howitwrks_1,80,'5vh')
-addImage('#h_it_w_crsl', howitwrks_2,80,'5vh')
-addImage('#h_it_w_crsl', howitwrks_3, 80, '8vh')
+addImage('#h_it_w_crsl', slide_1,500,'1vh')
+addImage('#h_it_w_crsl', slide_2,500,'1vh')
+addImage('#h_it_w_crsl', slide_3, 500, '1vh')
 
 function addSlideImage(slct,img,width=200) {
     let img_prd = document.createElement('img')
@@ -45,9 +45,9 @@ function addSlideImage(slct,img,width=200) {
     prd_div.appendChild(img_prd,width)
 }
 
-addSlideImage('#slide_1', slide_1)
-addSlideImage('#slide_2', slide_2)
-addSlideImage('#slide_3',slide_3)
+// addSlideImage('#slide_1', slide_1)
+// addSlideImage('#slide_2', slide_2)
+// addSlideImage('#slide_3',slide_3)
 
 const body = document.getElementById('bg')
 body.style.backgroundImage = `url(${_bg}),url(${_bg2})`
