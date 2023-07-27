@@ -48,11 +48,15 @@ button:not(:disabled), [type=button]:not(:disabled){
 body {
     overflow-x: hidden; 
 }
-
+#myTab{
+    background-color: #fafafa;
+    margin-bottom: 1vh!important;
+}
 .original{
     width:85vw;
     max-width: 85vw;
     height: 57vh;
+    opacity:0.95;
 }
 
 .img-fluid{
@@ -102,15 +106,16 @@ body {
     .original{
         width:910w;
         max-width: 97vw;
-        height:160vh ;
-        margin-top: 45vh;
+        height:125vh ;
+        margin-top: 35vh;
+        opacity:0.9;
     }
 
     .bg{
-        height:170vh ;
+        background-image: none ;
     }
     #myTabContent{
-        height: 173vh;
+        height: 157vh;
     }
     #myTab{
         gap: 2px !important;;
@@ -147,5 +152,9 @@ body {
     .img-fluid {
         max-width: 10vh;
         margin-left: 5vh;
+    }
+
+    .prdct-img{
+        display: none !important;;
     }
   }
