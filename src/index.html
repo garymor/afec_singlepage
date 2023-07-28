@@ -6,8 +6,17 @@
     <title>sr2 | ARC - S is a ready to use shrinkage reducing admixture for concrete and mortars. </title> 
 
     <script>
-       function submit_cntct(){
-          []
+       function tgll_h_it_w_crsl(){
+          let crsl = document.getElementById('h_it_w_crsl')
+          if(!crsl.style.top ||   crsl.style.display == 'none') {
+            crsl.style.display = 'flex'
+            crsl.style.top = '20vh';} 
+            else {
+             crsl.blur()
+              crsl.style.display = 'none'
+              crsl.style.top = '-150vh';
+              document.getElementById('profile-tab-pane').focus()
+            }
        }
     </script>
 
@@ -16,7 +25,7 @@
 
     <!-- <div class="position-absolute top-5 end-0" style="margin-right: 5vh;border-radius: 10vh"><i  id="logo_div"></i></div> -->
      
-    <ul class="nav nav-underline navbar-expand-lg navbar-light    " style="display: flex;flex-wrap: nowrap;gap: 5vh;margin:auto;width:98%;padding:1vh;margin-top:1vh;border-bottom:1px solid grey" id="myTab" role="tablist">
+    <ul class="nav nav-underline  navbar-expand-lg navbar-light    " style="display: flex;flex-wrap: nowrap;gap: 5vh;margin:auto;width:98%;padding:1vh;margin-top:1vh;border-bottom:1px solid grey" id="myTab" role="tablist">
         <li class="nav-item rounded" role="presentation" style="background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); padding:1vh;">
           <button class="nav-link active text-wrap fs-3 " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"> <i class="bi bi-house-fill"></i>  H   </button>
         </li>
@@ -28,7 +37,7 @@
           </li>
           <li style="width:25vw" id="break-tab"></li>
           <li class="nav-item" role="presentation">
-            <button  type="button" class="btn " style="margin:2vh;color:white" ><a href="https://afec1bucket164201-dev.s3.eu-west-1.amazonaws.com/public/reports/2_/2022/535/12" ><b><i class="bi bi-file-pdf"></i>Technical documents</a><b></button>
+            <button  type="button" class="btn " style="margin:2vh;color:white" ><a href="https://afec1bucket164201-dev.s3.eu-west-1.amazonaws.com/public/reports/2_/2022/535/12" ><b><i class="bi bi-file-pdf"></i>Technical documents</a></b></button>
           </li>
         
           <li class="nav-item" role="presentation">
@@ -53,7 +62,7 @@
                     
                         Concrete is commonly used in construction due to its workability and plasticity when fresh and for its high mechanical strength when dry. 
                         <br></br> 
-                        <i style="font-size: 1.5em;font-weight: 800;font-family: cursive">ARC - S does not change or influence the water to cement ratio and is compatible with 3rd generation superplasticizers and older generations of plasticizers and superplasticizers</i>
+                        <i style="font-size: 1.5em;font-weight: 800;">ARC - S does not change or influence the water to cement ratio and is compatible with 3rd generation superplasticizers and older generations of plasticizers and superplasticizers</i>
                         <br></br> 
                         this high strength results in low elasticity and can only withstand minor deformations.  While drying - shrinkage overcome the mechanical constraint, the concrete cracks. 
                         <b>ARC - S</b> is a ready to use shrinkage reducing admixture for concrete and mortars, which enhances extra reliability to sensitive concrete. 
@@ -83,8 +92,19 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body" id="card_prd2" >
+                     
                       <h3 class="card-title">How it works?</h3>
-                      <p class="card-text" style="margin-top: 2vh;">
+                      
+                     
+                      
+                        <button class="btn btn-info " type="button" onclick="tgll_h_it_w_crsl()" >
+                            science charts
+                        </button>
+                        
+
+
+                    
+                       <p class="card-text" style="margin-top: 2vh;">
                         The volumetric changes in concrete structures due to the loss of moisture by evaporation are known as concrete casting shrinkage. <br><br>
                         When shrinkage comes up against a mechanical constraint, the concrete may crack – this will result with weakening of the casted element. 
                         Concrete shrinkage can be classified to a few types, among them “Plastic” and “Drying”. 
@@ -106,25 +126,6 @@
                 </div>
               </div>
 
-              <!-- <div  class="card ms-5  position-absolute   p-1    "   style="top:15%;left:65%;">
-                <div class="row g-0">
-                  <div class="col-md-12">
-                    <div id="carouselExampleSlidesOnly" style="width:30vh; " class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" id="slide_1">
-                            
-                          </div>
-                          <div class="carousel-item" id="slide_2"> 
-                             
-                          </div>
-                          <div class="carousel-item" id="slide_3">
-                             
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div> -->
 
          </div> 
 
@@ -160,11 +161,11 @@
       <nav class="navbar" style="display:flex;height:10vh;background-color: white;flex-direction: row;flex-wrap: nowrap;">
         
     
-        <div><h3 class="card-title rounded" style="margin-left:'1vh';display:float;gap:'1vh';width:fit-content;background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); padding:1vh;">ARC - S <span style="display: inline-flex;font-size: medium;"><i>Shrinkage reducing agent</i></span></h3></div>
+        <div><h3 class="card-title rounded" id="brand" style="margin-left:'1vh';display:float;gap:'1vh';width:fit-content;background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); padding:1vh;">ARC - S <span style="display: inline-flex;font-size: medium;"><i>Shrinkage reducing agent</i></span></h3></div>
         <div class="container" >
             <button type="button" class="nav-link fs-5 text-wrap w-75 "  style="color: #21765a;font-weight: bold;font-size: 0.8em;" id="liveToastBtn"><i class="bi bi-envelope-paper" style="font-size: 0.9em;"></i> CONTACT US </button>
         </div>
-        <div><h5 class="card-title rounded" style="width:fit-content; padding:1vh;overflow-wrap: anywhere;">you can find us | harotem 12. netanya</h3></div>
+        <div><h5 class="card-title rounded" id="find_us" style="width:fit-content; padding:1vh;overflow-wrap: anywhere;">you can find us | harotem 12. netanya</h3></div>
         
       </nav>
      
@@ -182,7 +183,7 @@
                 
                 <div class="mb-3">
                     <label for="fullname" class="form-label">full name</label>
-                    <input type="text" class="form-control" id="fullname" required placeholder="required!"  pattern="[a-z]*">
+                    <input type="text" class="form-control" id="fullname" required placeholder="required!"  pattern="[a-z A-Z]*">
                   </div>
 
                   <div class="mb-3">

@@ -144,17 +144,34 @@ body {
         right: 10% !important;
     }
     #h_it_w_crsl{
-      
-      left: -8vh;
-    position: relative;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fafafa;
+        display:none;
+        background-color: #292626;
+        border-radius: 2px;
+        padding:3vh;
+        top:-150vh;
     }
+   
 
     .img-fluid {
-        max-width: 10vh;
-        margin-left: 5vh;
+       
+        margin-left: 1vh;
     }
 
     .prdct-img{
         display: none !important;;
+    }
+    #liveToastBtn{
+        display:none;
+    }
+    #find_us{
+        font-size: 0.8em;
+    }
+    #brand{
+        font-size: 0.8em;
+        width:45vw!important 
     }
   }
